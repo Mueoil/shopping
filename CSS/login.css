@@ -1,0 +1,209 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+}
+a{
+	text-decoration: none;
+	color: #666666;
+}
+a:hover{
+	color: #F64747;
+}
+ul li{
+	list-style: none;
+}
+img{
+	border: 0 none;
+	vertical-align: top;
+}
+
+.w{
+	width: 1200px;
+	margin: 0 auto;
+}
+#logo{
+	position: relative;
+/* 	width: 310px;
+	height: 100px; */
+	float: left;
+}
+#logo-login{
+	width: 270px;
+	position: relative;
+	float: left;
+}
+#logo a{
+	vertical-align: middle;
+	float: left;
+}
+#logo b{
+	display: block;
+	width: 150px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-size: 26px;
+	font-weight: normal;
+}
+#content{
+	margin-top: 120px;
+	margin-bottom: 25px;
+/* 	height: 800px; */
+	clear: both;
+	background: url(../image/loginbg.jpg) no-repeat center;
+}
+#content .login-wrap{
+	margin-top: 0px;
+	position: relative;
+	height: 475px;
+	margin: 10px 0px 20px;
+	z-index: 5;
+}
+#content .login-wrap .login-form{
+	float: right;
+/* 	top: 85px; */
+	position: relative;
+	z-index: 4;
+	overflow: visible;
+	width: 346px;
+}
+#content .login-wrap .register-form{
+	float: right;
+/* 	top: 35px; */
+	position: relative;
+	z-index: 4;
+	overflow: visible;
+	width: 346px;
+}
+.userlogin button{
+    width: 290px;
+    height: 30px;
+    background-color: #00a8ff;
+    cursor: pointer;
+}
+.userregister button{
+    width: 290px;
+    height: 30px;
+    background-color: #00a8ff;
+    cursor: pointer;
+}
+.userlogin{
+	width: 420px;
+/* 	background-color: white; */
+	float: right;
+	margin-top: 30px;
+	margin-left: 40px;
+	padding-bottom: 32px;
+}
+.userregister{
+	width: 420px;
+	/* 	background-color: white; */
+	float: right;
+/* 	margin-top: 30px; */
+/* 	margin-left: 40px; */
+/* 	padding-bottom: 32px; */
+}
+.userlogin h2,.userregister h2{
+	text-align: center;
+	font-size: 24px;
+	padding: 40px 0px;
+	color: #00a8ff;
+	font-weight: normal;
+}
+.userlogin h2 a:hover,.userregister h2 a:hover{
+	color: #00A8FF;
+}
+.userlogin span,.userregister span{
+	margin-right: 10px;
+}
+.userlogin h2 a,.userregister h2 a{
+	color: #8a8a8a;
+	margin-left: 10px;
+}
+.userlogin form,.userregister form{
+	width: 292px;
+	margin: 0 auto;
+}
+.userlogin p,.userregister p{
+    margin-bottom: 32px;
+	color: #333;
+}
+.userlogin .txtinfo,.userregister .txtinfo{
+	width: 250px;
+	height: 40px;
+	padding-left: 40px;
+	border: 1px solid #999;
+}
+.userlogin .cbbox,.userregister .cbbox{
+	margin-right: 8px;
+	vertical-align: middle;
+}
+.userlogin p a{
+	margin-left: 230px;
+	cursor: pointer;
+}
+.userlogin p a:hover,.userregister p a:hover{
+	color: #00A8FF;
+}
+.userlogin .bt,.userregister .bt{
+	width: 290px;
+	height: 40px;
+	background-color: #00A8FF;
+	border: none;
+	color: white;
+	font-size: 22px;
+	cursor: pointer;
+}
+.userregister p a{
+	color: #F64747;
+}
+.userregister .bt{
+	width: 292px;
+	height: 42px;
+	background-color: #00A8FF;
+	border: none;
+	color: white;
+	font-size: 22px;
+/* 	margin-left: 8px; */
+	cursor: pointer;
+}
+.register-message{
+	display: inline-block;
+}
+.wrong{
+	color: red;
+	font-weight: normal;
+	float: left;
+}
+#footer-nav{
+	text-align: center;
+	margin: 0px 10px;
+}
+#footer-nav a{
+	font-style:normal ;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 150%;
+	font-family: arial,verdana,"宋体";
+	color: #666666;
+}
+#footer-nav a:hover{
+	color: #F64747;
+	text-decoration: underline;
+}
+#footer-copy{
+	margin: 10px 0px;
+	text-align: center;
+	font-style:normal ;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 150%;
+	font-family: arial,verdana,"宋体";
+	color: #666666;
+}

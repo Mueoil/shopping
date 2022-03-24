@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    color: #3a3a3a;
+    /* overflow: hidden; */
+}
+.nav{
+    height: 50px;
+    background-color: rgb(56, 61, 65);
+}
+.nav_left{
+    height: 50px;
+    width: 160px;
+}
+.nav_left_word p{
+    position: absolute;
+    margin-left: 190px;
+    margin-top: -35px;
+    color: rgb(214, 212, 212);
+    font-size: 13px;
+}
+.nav_left_ul{
+    margin-left: 1200px;
+    margin-top: -40px;
+ 
+}
+.nav_left_ul li{
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+}
+.nav_left_ul button{
+    background-color: rgb(56, 61, 65);
+    color: rgb(214, 212, 212);
+}
+.left{
+    background-color: rgb(51, 55, 67);
+    height: 670px;
+    width: 160px;
+}
+.tab_list{
+    margin-left: -40px;
+}
+.tab_list li{
+    float: left;
+    width: 120px;
+    height: 69px;
+    line-height: 69px;
+    padding: 0 20px;
+    text-align: center;
+    
+    cursor: pointer;
+    list-style-type: none;
+    color: rgb(214, 212, 212);
+}
+.tab_list li:hover{
+    background-color: rgb(0, 194, 222);
+}
+.tab_list .current{
+    background-color: rgb(0, 194, 222);
+    color: #fff;
+}
+.item_info{
+    padding: 20px 0 0 20px;
+}
+.tab_con{
+    /* border: 1px solid red; */
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    height: 520px;
+    overflow: scroll;
+    width: 1353px;
+    background-color: rgb(51, 55, 67);
+}
+.tab_con .item{
+    line-height: 30px;
+    margin-left: 50px;
+    color: #fff;
+}
+.item{
+    display: none ;
+}
+.item_info td{
+    color:rgb(214, 212, 212);
+    text-align: center;
+}
+.context{
+    margin-left: 160px;
+    margin-top: -44px;
+    width: 1374px;
+    height: 670px;
+}
+.identity{
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    height: 130px;
+    width: 1353px;
+    background-color: rgb(51, 55, 67);
+}
+.tab_con .item_button{
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 1090px;
+    background-color: rgb(51, 55, 67);
+    color: rgb(214, 212, 212);
+}
+.item_info1_word{
+    color: #fff; 
+    margin-left: 500px;
+}
+.item_info1 button{
+    background-color: rgb(51, 55, 67);
+    color:rgb(214, 212, 212);
+    margin-left: 30px;
+}
+.btn{
+    margin-left: 600px;
+}

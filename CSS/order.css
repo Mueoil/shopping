@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.section{
+    height: 32px;
+    background-color: #f1f1f1;
+}
+.w{
+    line-height: 32px;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.w .left{
+    float: left;
+}
+.w .left ul li{
+    float: left;
+}
+.w .left ul li a{
+    color: #666;
+}
+.w .left ul li .styleColor{
+    color: #c81623;
+}
+.w .right{
+    float: right;
+}
+.w .right ul li{
+    float: left;
+}
+.w .right ul li:nth-child(2n){
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 10px 14px;
+}
+/*头部*/
+.header{
+    position: relative;
+    height: 150px;
+}
+.logo{
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    top: 35px;
+}
+.logo a{
+    display: block;
+    width: 200px;
+    height: 90px;
+    background:url(../Image/logo.jpg) no-repeat;
+}
+.search{
+    position: absolute;
+    width: 600px;
+    height: 40px;
+    top: 50px;
+    left: 300px;
+}
+.search input{
+    border: 0;
+    outline: none;
+}
+.search .searchtext{
+    width: 450px;
+    height: 40px;
+    padding-left: 10px;
+    float: left;
+    border: 3px solid #b1191a;
+}
+.search .searchbtn{
+    width: 145px;
+    height: 40px;
+    background-color: #b1191a;
+    color: aliceblue;
+    font-size: 18px;
+}
+.hotwords{
+    position: absolute;
+    top: 95px;
+    left: 300px;
+}
+.hotwords a{
+    color: #666;
+    margin: 0 12px;
+}
+.hotwords a:hover{
+    color: #c81623;
+}
+.hotwords .styleColor{
+    color: #c81623;
+}
+.shopcar{
+    position: absolute;
+    top: 50px;
+    left: 950px;
+    width: 150px;
+    height: 35px;
+    border: 1px solid whitesmoke;
+    background-color: #f1f1f1;
+}
+.shopcar img{
+    margin-top: 3px;
+    margin-left: 3px;
+    float: left;
+}
+.shopcar a{
+    margin-top: 3px;
+    margin-left:40px;
+    display: block;
+    font-size: 16px;
+}
+.nav{
+    height: 50px;
+    border-bottom: 3px solid whitesmoke
+}
+.nav .navall{
+    float: left;
+    width: 220px;
+    height: 50px;
+    background-color: #ae9e95;
+}
+.nav .navall a{
+    font-size: 24px;
+}
+.navall .navtitle a{
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 45px;
+}
+.navall .navtitle a:hover{
+    color: #c81623;
+}
+.navall .navspecies{
+    width: 220px;
+    height: 470px;
+    background-color: #ae9e95;
+}
+.navall .navspecies ul li{
+    height: 35px;
+    line-height: 35px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.navall .navspecies ul li:hover{
+    background-color: whitesmoke;
+}
+.navall .navspecies ul li:hover a,.navall .navspecies ul li:hover span{
+    font-weight: bolder;
+    color: #ae9e95;
+}
+.navall .navspecies ul a,.navall .navspecies ul span{
+    color: whitesmoke;
+    font-size: 14px;
+    padding: 2px;
+}
+.navlist ul li{
+    float: left;
+}
+.navlist ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 40px;
+    font-size: 18px;
+    color: #666;
+}
+.navlist ul li a:hover{
+    color:#ae9e95;
+    font-weight: bolder;
+}
+#cart table{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	margin: 50px 0;
+}
+#cart th{
+	background-color: #f5f5f5;
+	font-size: 18px;
+}
+#cart td,#cart th{
+	border-bottom: 1px solid #CCCCCC;
+	height: 50px;
+	padding: 10px 0px;
+}
+#cart td{
+	font-size: 16px;
+}
+#cart td img{
+	width: 100px;
+}
+.right li:hover{
+    cursor: pointer;
+}
+.navtitle a:hover{
+	cursor: pointer;
+}
+.logo a{
+    cursor: pointer;
+}
+.cancel{
+    cursor: pointer;
+}

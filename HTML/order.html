@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Image/1.png" type="image/x-icon">
+    <title>订单页面</title>
+    <link rel="stylesheet" href="../CSS/order.css">
+</head>
+<body>
+    <section class="section">
+        <div class="w">
+            <div class="left">
+                <ul>
+                    <li>嘿，欢迎用户&nbsp;&nbsp;<span id="admin"></span>&nbsp;&nbsp;来到优物购物！</li>
+                    <li>
+                        <a class="styleColor" href="../html/login.html" id="login">请登录</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span onclick="order()">我的订单</span></li>
+                    <li></li>
+                    <li><span onclick="center()">个人中心</span></li>
+                    <li></li>
+                    <li>网站导航</li>
+                    <li></li>
+                    <li>手机飞云</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <header class="header w">
+        <div class="logo">
+            <h1><a onclick="index()" title="优物商场"></a></h1>
+        </div>
+        <div class="search">
+            <input type="search" id="searchBorder"  placeholder="请输入你要搜索的东西" class="searchtext">
+            <input type="submit" onclick="search()"  type="submit" value="搜索" class="searchbtn">
+    </div>
+        <div class="hotwords">
+            <a href="#" class="styleColor">零食推荐</a>
+            <a href="#">电脑配件</a>
+            <a href="#">每100-50</a>
+            <a href="#">好物9.9</a>
+            <a href="#">手机爆款</a>
+            <a href="#">礼品推荐</a>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="w">
+            <div class="navall">
+                <div class="navtitle">
+                    <a onclick="index()">首页</a>
+                </div>
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li><a href="">秒杀</a></li>
+                    <li><a href="">优物服装</a></li>
+                    <li><a href="">优物家电</a></li>
+                    <li><a href="">优物生鲜</a></li>
+                    <li><a href="">优物超市</a></li>
+                    <li><a href="">优物美妆</a></li>
+                    <li><a href="">优物汽车</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper" class="w">
+        <div class="curpostion"><a onclick="index()">首页</a><span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</span>我的订单</div>
+        <div id="cart">	
+        </div>
+        <form method="post" id="form">
+                <input type="hidden" id="target" name="id">
+        </form>
+        <div class="clear"></div>
+        </div>
+        <script type="text/javascript" src="../JS/order.js"></script>
+        <script type="text/javascript" src="../JS/jquery.min.js"></script>
+        <script src="../JS/center.js"></script>
+        <script src="../JS/admin.js"></script>
+</body>
+</html>

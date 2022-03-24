@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Image/1.png" type="image/x-icon">
+    <title>搜索页面</title>
+    <link rel="stylesheet" href="../css/shoppinglist.css">
+</head>
+<body>
+    <section class="section">
+        <div class="w">
+            <div class="left">
+                <ul>
+                    <li>嘿，欢迎用户&nbsp;&nbsp;<span id="admin"></span>&nbsp;&nbsp;来到优物购物！</li>
+                    <li>
+                        <a class="styleColor" href="../html/login.html" id="login">请登录</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span onclick="order()">我的订单</span></li>
+                    <li></li>
+                    <li><span onclick="center()">个人中心</span></li>
+                    <li></li>
+                    <li>网站导航</li>
+                    <li></li>
+                    <li>手机飞云</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <header class="header w">
+        <div class="logo">
+            <h1><a onclick="index()" title="优物商场"></a></h1>
+        </div>
+        <div class="search">
+                <input type="search" id="searchBorder"  placeholder="请输入你要搜索的东西" class="searchtext">
+                <input type="submit" onclick="search()"  type="submit" value="搜索" class="searchbtn">
+        </div>
+        <div class="hotwords">
+            <a href="#" class="styleColor">零食推荐</a>
+            <a href="#">电脑配件</a>
+            <a href="#">每100-50</a>
+            <a href="#">好物9.9</a>
+            <a href="#">手机爆款</a>
+            <a href="#">礼品推荐</a>
+        </div>
+        <div class="shopcar">
+            <img src="../Image/cart.gif" alt=""><a onclick="openShopcar()" style="cursor: pointer;">我的购物车 >></a>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="w">
+            <div class="navall">
+                <div class="navtitle">
+                    <a onclick="index()">首页</a>
+                </div>
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li><a href="">秒杀</a></li>
+                    <li><a href="">优物服装</a></li>
+                    <li><a href="">优物家电</a></li>
+                    <li><a href="">优物生鲜</a></li>
+                    <li><a href="">优物超市</a></li>
+                    <li><a href="">优物美妆</a></li>
+                    <li><a href="">优物汽车</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="searcharea">
+        <dl>
+                <dd class="pp">
+                    <h5>品牌:</h5>
+                    <ul>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo1.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo2.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo3.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo4.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo5.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo6.jpg"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo7.jpg"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo8.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo9.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo10.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo11.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo12.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo13.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo14.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo15.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo16.png"/></a></li>
+                    </ul>
+                </dd>
+        </dl>
+    </div>
+   <div class="all" style="margin-left: 360px; margin-top: -200px;">
+       <div>
+           <h3 style="margin-left: -200px;">您搜索的商品内容如下：</h3>
+       </div>
+        <div>
+            <ul class="brick-list" id="searchResult" style="margin-top: 50px; margin-left: -180px; ">
+            </ul>
+        </div>
+    </div>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../JS/admin.js"></script>
+    <script src="../JS/center.js"></script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Image/1.png" type="image/x-icon">
+    <title>优物商场</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <section class="section">
+        <div class="w">
+            <div class="left">
+                <ul>
+                    <li>嘿，欢迎用户&nbsp;&nbsp;<span id="admin"></span>&nbsp;&nbsp;来到优物购物！</li>
+                    <li>
+                        <a class="styleColor" href="../html/login.html" id="login">请登录</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span onclick="order()">我的订单</span></li>
+                    <li></li>
+                    <li><span onclick="center()">个人中心</span></li>
+                    <li></li>
+                    <li>网站导航</li>
+                    <li></li>
+                    <li>手机飞云</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <header class="header w">
+        <div class="logo">
+            <h1><a onclick="index()" title="优物商场"></a></h1>
+        </div>
+        <div class="search">
+            <input type="search" id="searchBorder"  placeholder="请输入你要搜索的东西" class="searchtext">
+            <input type="submit" onclick="search()"  type="submit" value="搜索" class="searchbtn">
+    </div>
+        <div class="hotwords">
+            <a href="#" class="styleColor">零食推荐</a>
+            <a href="#">电脑配件</a>
+            <a href="#">每100-50</a>
+            <a href="#">好物9.9</a>
+            <a href="#">手机爆款</a>
+            <a href="#">礼品推荐</a>
+        </div>
+        <div class="shopcar">
+            <img src="../Image/cart.gif" alt=""><a onclick="gouwuche()">我的购物车 >></a>
+            <p id="close" style="cursor: pointer; margin-left: 350px; margin-top: -50px; height: 150px; width: 150px; position: absolute; z-index: 999;">x</p>
+            <img id="closeImage" style=" margin-left: 220px; margin-top: -30px; height: 150px; width: 150px; position: absolute;" src="../Image/closed.png">
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="w">
+            <div class="navall">
+                <div class="navtitle">
+                    全部商品
+                </div>
+                <div class="navspecies">
+                    <ul>
+                        <li><span><a href="#">家用电器</a></span></li>
+                        <li><span><a href="#">手机</a> / <a href="#">运营商</a> / <a href="#">数码</a></a></span></li>
+                        <li><span><a href="#">家具</a> / <a href="#">家居</a> / <a href="#">家装</a></span></li>
+                        <li><span><a href="#">男装</a> / <a href="#">女装</a> / <a href="#">童装</a> / <a href="#">内衣</a></span></li>
+                        <li><span><a href="#">食品</a> / <a href="#">酒类</a> / <a href="#">生鲜</a> / <a href="#">特产</a></span></li>
+                        <li><span><a href="#">电脑</a> / <a href="#">手机</a></span></li>
+                        <li><span><a href="#">机票</a> / <a href="#">旅游</a> / <a href="#">生活</a></span></li>
+                        <li><span><a href="#">户外装备</a> / <a href="#">户外运动</a>/ <a href="#">户外鞋套</a></span></li>
+                        <li><span><a href="#">手机维修</a> / <a href="#">办公维修</a>/ <a href="#">数码维修</a></span></li>
+                        <li><span><a href="#">母婴</a> / <a href="#">玩具乐器</a></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li><a href="">秒杀</a></li>
+                    <li><a href="">优物服装</a></li>
+                    <li><a href="">优物家电</a></li>
+                    <li><a href="">优物生鲜</a></li>
+                    <li><a href="">优物超市</a></li>
+                    <li><a href="">优物美妆</a></li>
+                    <li><a href="">优物汽车</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="w">
+        <div class="main">
+            <div class="focus">
+                <div class="focus_btn">
+                    <div class="focus_btnleft"><a href="javascript:">&lt;</a></div>
+                    <div class="focus_btnright"><a href="javascript:">&gt;</a></div>
+                </div>
+                <ul>
+                    <li><img src="../Image/lunbo1.jpg" alt=""></li>
+                    <li><img src="../Image/lunbo2.jpg" alt=""></li>
+                    <li><img src="../Image/lunbo3.jpg" alt=""></li>
+                    <li><img src="../Image/lunbo4.jpg" alt=""></li>
+                    <li><img src="../Image/lunbo5.jpg" alt=""></li>
+                </ul>
+                <ol>
+                </ol>
+            </div>
+            <div class="newlist">
+                <div class="new">
+                    <div class="new_title">
+                        <div class="new_title_left">优惠快报</div>
+                        <div class="new_title_right"><a href="#">更多>></a></div>
+                    </div>
+                    <div class="new_body">
+                        <ul>
+                            <li><a href="#"><span>[热门]</span>有了360儿童电话手表,再也不怕孩子乱跑了</a></li>
+                            <li><a href="#"><span>[推荐]</span>时刻做好防灾准备,家用睡袋常备准没错</a></li>
+                            <li><a href="#"><span>[HOT]</span>每一本好书都是一次人生经历,用海信阅读手机品味人生感悟了</a></li>
+                            <li><a href="#"><span>[热评]</span>百元入手，养宠无忧的德尔玛DX300吸尘器</a></li>
+                            <li><a href="#"><span>[休闲]</span>《悟空传》:另类的西游记,另类的玄幻经典</a></li>
+                            <li><a href="#"><span>[家居]</span>虽是小居室,这些收纳妙招用起来屋子就一点也不挤了</a></li>
+                            <li><a href="#"><span>[汽车]</span>神逆!贾跃亭FF91终于成了:全面登陆中国</a></li>
+                        </ul>
+                    </div>
+                    <div class="new_pic">
+                        <ul>
+                            <li><img width="250px" height="90px"src="../Image/newlist1.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="indexproduct">
+        <div class="w">
+            <div class="box-hd">
+                <h2 class="title">限时抢购</h2>
+            </div>
+            <div class="box-hd1">
+                <div class="row">
+                    <div class="flashbuy">
+                        <div class="round">14:00场</div>
+                        <img src="../Image/flashbuy.png" />
+                        <div class="desc">距离结束还有</div>
+                        <div class="countdown">
+                            <span class="hour"></span>
+                            <i>:</i>
+                            <span class="min"></span>
+                            <i>:</i>
+                            <span class="second"></span>
+                        </div>
+                    </div>
+                    <div class="flashsalelist">
+                        <ul class="swiper-wrapper">
+                            <li class="flash-product rainbow-item-1" style=" margin-right: 14px;">
+                                <a onclick="good()">
+                                    <div class="thumb">
+                                        <img width="160" height="160" src="../Image/phone3.png" />
+                                    </div>
+                                    <h3 class="title">HUAWEI P40</h3>
+                                    <p class="desc">麒麟990 5G SoC芯片 5000万超感知徕卡三摄 30倍数字变焦 全网通5G手机</p>
+                                    <p class="price">
+                                        <span>4488元</span>
+                                        <del>5699元</del>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="flash-product rainbow-item-2" style=" margin-right: 14px;">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img width="160" height="160" src="../Image/phone4.jpg" />
+                                    </div>
+                                    <h3 class="title">魅族 17 航母限定版</h3>
+                                    <p class="desc">高通骁龙 865 + UFS 3.1 高速闪存 | 6400W 全场景影像系统 | 定制三星 Super AMOLED 90 帧直屏 | 4500mAh 超大电池 + 30W 快充 | 智能全功能 NFC</p>
+                                    <p class="price">
+                                        <span>4299元</span>
+                                        <del>5299元</del>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="flash-product rainbow-item-3" style=" margin-right: 14px;">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img width="160" height="160" src="../Image/phone6.png" />
+                                    </div>
+                                    <h3 class="title">vivo S7e 活力版 8GB+128GB 黑镜</h3>
+                                    <p class="desc"> 6400万超清影像系统|3200万超清前置|重量约171.7g|33W闪充</p>
+                                    <p class="price">
+                                        <span>2198元</span>
+                                        <del>2398元</del>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="flash-product rainbow-item-4">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img width="160" height="160" src="../Image/phone7.jpg" />
+                                    </div>
+                                    <h3 class="title">小米10 青春版 5G</h3>
+                                    <p class="desc">向往的生活同款/ 50倍潜望式超远变焦 / 双模5G / 骁龙765G处理器 / 三星AMOLED原色屏 / 180Hz采样率 / 4160mAh大电池 / 多功能NFC / 红外遥控器</p>
+                                    <p class="price">
+                                        <span>2099元</span>
+                                        <del>2499元</del>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="findgoods">
+        <div class="findgoodsleft">
+            <img src="../Image/发现好物.png" alt="">
+        </div>
+        <div class="catogoryImg1">
+            <ul class="img1">
+                <li><a href="#"><img src="../Image/gundong1.jpg"><span>Bose无线低音音响</span></a></li>
+                <li><a href="#"><span>月光宝盒 炫彩高清屏 音乐播放器</span><img src="../Image/gundong2.jpg"></a></li>
+                <li><a href="#"><img src="../Image/gundong3.jpg"><span>黑峡谷 凯华升级BOX轴 机械键盘</span></a></li>
+                <li><a href="#"><span>任天堂switch日版游戏机ns续航增强版</span><img src="../Image/gundong4.jpg"></a></li>
+                <li><a href="#"><img src="../Image/gundong5.png"><span>罗技 G903全新hero芯片 吃鸡鼠标</span></a></li>
+                <li><a href="#"><span>酷极 后现代复古led灯美式简北欧式吊灯</span><img src="../Image/gundong6.jpg"></a></li>
+                <li><a href="#"><img src="../Image/gundong7.jpg"><span>惠普(hp) 星系列星Pavilion 14-dv0003TX 14.0英寸十一代轻薄本笔记本电脑</span></a></li>
+                <li><a href="#"><span>巧马家纺冬季坐垫椅子电暖屁垫加厚座椅垫</span><img src="../Image/gundong8.jpg"></a></li>
+                <li><a href="#"><img src="../Image/gundong9.jpg"><span>米家 小米电饭煲电饭锅1.6L 智能迷你小饭煲 APP智能互联预约</span></a></li>
+                <li><a href="#"><span>APPLE娱乐平板电脑</span><img src="../Image/gundong10.jpg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="recommondgoods">
+        <div class="brick-box">
+            <div class="box-hd">
+                <h2 class="title">好物推荐</h2>
+                <div class="more">
+                    <a onclick="shopplist()"  class="more-link">
+                        查看全部
+                        <i class="iconfont"><img style="width: 25px;height: 25px;" src="../Image/right.png" /></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="index-product">
+                    <ul class="brick-list">
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner1.png" />
+                                </div>
+                                <h3 class="title">Note 9 Pro</h3>
+                                <p class="desc">一亿像素夜景相机,120Hz六档变速</p>
+                                <p class="price">
+                                    <span class="num">¥1599</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner2.jpg" />
+                                </div>
+                                <h3 class="title">TFIT清洁泥膜 补水收缩改善黑头</h3>
+                                <p class="desc">99元2瓶!单瓶到手价49.5</p>
+                                <p class="price">
+                                    <span class="num">¥59</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner3.jpg" />
+                                </div>
+                                <h3 class="title">美的321升变频一级能效冰箱</h3>
+                                <p class="desc"> 前100名晒单送三年延保</p>
+                                <p class="price">
+                                    <span class="num">¥2999</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner4.jpg" />
+                                </div>
+                                <h3 class="title">九阳爆款升级5.5L大容量空炸</h3>
+                                <p class="desc">晒赠99元榨汁机</p>
+                                <p class="price">
+                                    <span class="num">¥469</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner5.jpg" />
+                                </div>
+                                <h3 class="title">圣诞节大白鹅玩偶</h3>
+                                <p class="desc">萌系大鹅，多变造型</p>
+                                <p class="price">
+                                    <span class="num">¥49元</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner6.jpg" />
+                                </div>
+                                <h3 class="title">旺旺 仙贝 零食 家庭装 400g</h3>
+                                <p class="desc">爆款直降 </p>
+                                <p class="price">
+                                    <span class="num">¥16</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner7.jpg" />
+                                </div>
+                                <h3 class="title">Dior迪奥新款999#正红色-哑光</h3>
+                                <p class="desc"> 爆款直降</p>
+                                <p class="price">
+                                    <span class="num">¥226</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner8.jpg" />
+                                </div>
+                                <h3 class="title">海尔55英寸AI智慧屏</h3>
+                                <p class="desc">爆款智慧屏限时直降</p>
+                                <p class="price">
+                                    <span class="num">¥1969</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner9.jpg" />
+                                </div>
+                                <h3 class="title">贵州茅台集团 茅台醇浆 酱香白酒</h3>
+                                <p class="desc">酱香突出，送酒具</p>
+                                <p class="price">
+                                    <span class="num">¥1999</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="brick-item">
+                            <a href="#" target="_blank">
+                                <div class="figure-img">
+                                    <img width="160px" height="160px" src="../Image/banner10.jpg" />
+                                </div>
+                                <h3 class="title">惠氏瑞士铂臻奶粉3段800g*6罐</h3>
+                                <p class="desc">领券享8.8折</p>
+                                <p class="price">
+                                    <span class="num">¥1440</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-wrap">
+            <img src="../Image/footer.png"/>
+    </div>
+    <footer>
+        <div class="w">
+            <div id="footer-nav">                <a href="#">关于我们</a>丨
+                <a href="#">联系我们</a>丨
+                <a href="#">友情链接</a>丨
+                <a href="#">商家入驻</a>丨
+                <a href="#">广告服务</a>丨
+                <a href="#">销售联盟</a>
+            </div>
+            <div id="footer-copy">
+                Copyright&copy;作者:xxx,电子邮件:xxxxxxxxxx0@qq.com,地址:xx省xx市
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../JS/index.js"></script>
+    <script src="../JS/admin.js"></script>
+    <script src="../JS/jQuery.js"></script>
+    <script src="../JS/center.js"></script>
+    <script src="../JS/search.js"></script>
+    
+</body>
+</html>

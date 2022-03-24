@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="../CSS/adminManager.css">
+    <link rel="shortcut icon" href="../image/1.png" type="image/x-icon">
+    <script src="../JS/jquery.js"></script>
+</head>
+<body>
+    <div class="contain">
+        <div class="nav">
+            <div class="nav_left">
+                <img src="../image/logo.jpg" style="height: 50px; width: 160px; opacity: 0.7;">
+            </div>
+            <div class="nav_left_word">
+                <p>管理后台</p>
+            </div>
+            <div class="nav_left_ul">
+                <ul>
+                    <li><button>帮助</button></li>
+                    <li><button>审批</button></li>
+                    <li><a href="login.html"><button id="adminlogin">请登录</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="left">
+            <div class="tab">
+                <div class="tab_list">
+                    <ul>
+                        <li class = "current">管理用户信息</li>
+                        <li>添加商品信息</li>
+                        <li>管理商品信息</li>
+                        <li>商品评价</li>
+                        <li>手机社区</li><br><br>
+                    </ul>
+                </div>
+            </div>
+            <div class="context">
+                <div class="identity">
+                    <img src="../image/1.jpg" style="height: 100px; width: 100px; margin-left: 200px;margin-top: 15px;">
+                    <div class="identity_word">
+                        <p id="admintel" style="margin-left: 350px; margin-top: -100px; color: #fff;"></p>
+                        <p id="adminrole" style="margin-left: 350px; margin-top: 10px; color: #fff;"></p>
+                        <p id="admintel" style="margin-left: 350px; margin-top: -60px; color: #fff;"></p>
+                    </div>
+
+                </div>
+                <div class="tab_con">               
+                    <div class="item" style="display: block;">
+                        用户信息
+                        <div class="item_info">
+                            <table border="1" height="50" style="margin-left: 90px;" id="table_tr">
+                                <tr>
+                                    <td width="200">ID</td>
+                                    <td width="200">手机号码</td>
+                                    <td width="200">用户名</td>
+                                    <td width="200">身份</td>
+                                    <td width="200">操作</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button type="button" onclick="isclear()" class="item_button" style="position: absolute; margin-top: 10px;">删除所有数据</button>
+                    </div>
+                    <div class="item">
+                        添加商品信息
+                        <div class="item_info1" >
+                            <img src="" id="img">
+                            <div class="item_info1_word">请选择商品图片：<input type="file" onchange = "selectImage(this)" class="item_info1_img"></div>
+                            <br>
+                            <div class="item_info1_word">请输入商品名称：<input type="text" id="cargo"></div>
+                            <div class="item_info1_word">请输入商品价格：<input type="number" id="price"></div>
+                            <div class="item_info1_word">请输入商品地址：<input type="text" id="address"></div>
+                            <div class="item_info1_word">请输入数量：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="count"></div><br>
+                            <div class="btn">
+                            <button type="button" onclick ="add()">添加</button>
+                            <button type="resert" id="resert">重置</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        管理商品信息
+                        <div class="item_info" style="margin-left: -130px;">
+                            <table border="1" height="50" style="margin-left: 90px;" id="table_tr_1">
+                                <tr>
+                                    <td width="180">商品图片</td>
+                                    <td width="180">商品编号</td>
+                                    <td width="180">商品名称</td>
+                                    <td width="180">商品价格</td>
+                                    <td width="180">商品产地</td>
+                                    <td width="180">数量</td>
+                                    <td width="180">操作</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="show" id="show">
+                        
+                    </div>
+                    <div class="item">
+                        手机社区模块内容
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/adminManager.js"></script>
+</body>
+</html>

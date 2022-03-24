@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.section{
+    height: 32px;
+    background-color: #f1f1f1;
+}
+.w{
+    line-height: 32px;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.w .left{
+    float: left;
+}
+.w .left ul li{
+    float: left;
+}
+.w .left ul li a{
+    color: #666;
+}
+.w .left ul li .styleColor{
+    color: #c81623;
+}
+.w .right{
+    float: right;
+}
+.w .right ul li{
+    float: left;
+}
+.w .right ul li:nth-child(2n){
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 10px 14px;
+}
+/*头部*/
+.header{
+    position: relative;
+    height: 150px;
+}
+.logo{
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    top: 35px;
+}
+.logo a{
+    display: block;
+    width: 200px;
+    height: 90px;
+    background:url(../Image/logo.jpg) no-repeat;
+}
+.search{
+    position: absolute;
+    width: 600px;
+    height: 40px;
+    top: 50px;
+    left: 300px;
+}
+.search input{
+    border: 0;
+    outline: none;
+}
+.search .searchtext{
+    width: 450px;
+    height: 40px;
+    padding-left: 10px;
+    float: left;
+    border: 3px solid #b1191a;
+}
+.search .searchbtn{
+    width: 145px;
+    height: 40px;
+    background-color: #b1191a;
+    color: aliceblue;
+    font-size: 18px;
+}
+.hotwords{
+    position: absolute;
+    top: 95px;
+    left: 300px;
+}
+.hotwords a{
+    color: #666;
+    margin: 0 12px;
+}
+.hotwords a:hover{
+    color: #c81623;
+}
+.hotwords .styleColor{
+    color: #c81623;
+}
+.shopcar{
+    position: absolute;
+    top: 50px;
+    left: 950px;
+    width: 150px;
+    height: 35px;
+    border: 1px solid whitesmoke;
+    background-color: #f1f1f1;
+}
+.shopcar img{
+    margin-top: 3px;
+    margin-left: 3px;
+    float: left;
+}
+.shopcar a{
+    margin-top: 3px;
+    margin-left:40px;
+    display: block;
+    font-size: 16px;
+}
+.nav{
+    height: 50px;
+    border-bottom: 3px solid whitesmoke
+}
+.nav .navall{
+    float: left;
+    width: 220px;
+    height: 50px;
+    background-color: #ae9e95;
+}
+.nav .navall a{
+    font-size: 24px;
+}
+.navall .navtitle a{
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 45px;
+}
+.navall .navtitle a:hover{
+    color: #c81623;
+}
+.navall .navspecies{
+    width: 220px;
+    height: 470px;
+    background-color: #ae9e95;
+}
+.navall .navspecies ul li{
+    height: 35px;
+    line-height: 35px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.navall .navspecies ul li:hover{
+    background-color: whitesmoke;
+}
+.navall .navspecies ul li:hover a,.navall .navspecies ul li:hover span{
+    font-weight: bolder;
+    color: #ae9e95;
+}
+.navall .navspecies ul a,.navall .navspecies ul span{
+    color: whitesmoke;
+    font-size: 14px;
+    padding: 2px;
+}
+.navlist ul li{
+    float: left;
+}
+.navlist ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 40px;
+    font-size: 18px;
+    color: #666;
+}
+.navlist ul li a:hover{
+    color:#ae9e95;
+    font-weight: bolder;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper .wrapper_title{
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+}
+.wrapper .wrapper_title img{
+    float: left;
+}
+.wrapper .wrapper_title a{
+    display:inline-block;
+    color: #666;
+    height: 50;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.wrapper .wrapper_title a:hover{
+    color: #c81623;
+}
+.usercenter table{
+    border-collapse:collapse;
+    width:1000px;
+    margin: 0 auto;
+}
+.usercenter tr{ 
+    border: 1px solid #CCCCCC;
+}
+.usercenter td{ 
+    border: 1px solid #CCCCCC;
+    padding:8px;
+}
+.usercenter th{ 
+    font-weight:normal;
+    text-align:center;
+    border: 1px solid #CCCCCC;
+    background: #E5E5E5;
+    padding:8px;
+}
+.usercenter td img{
+    width:100px;
+    height: 90px;
+    margin-left:5px;
+}
+.usercenter a{
+    color:#000;
+    font-size:15px;
+}
+.usercenter .center{
+    vertical-align: middle;
+    text-align: center;
+    width: 105px;
+}
+.usercenter .center .item-price{
+    color: #c81623;
+    font-weight: bolder;
+    width: 105px;
+}
+.usercenter .introduce{
+    width: 340px;
+    text-align: center;
+    vertical-align: middle;
+}
+.usercenter .introduceImg{
+    width: 140px;
+}
+.usercenter .numopt{
+    vertical-align:middle;
+}
+.usercenter .numopt .item-num{
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid #dedede;
+    margin: 0 4px;
+    
+}
+.usercenter .numopt .setNum{
+    width: 30px;
+    height: 30px;
+	background-color: #f5f5f5;
+	border:none;
+	cursor:pointer;
+}
+.usercenter .endtitle{
+    width: 105px;
+    height: 50px;
+}
+.usercenter .endtitle{
+    height: 50px;
+}
+.usercenter .endcontent{
+    height: 50px;
+
+}
+.usercenter .encontent_margin{
+    margin-left:550px;
+}
+.usercenter #num,.usercenter .price{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.usercenter #monery{
+    color: #c81623;
+}
+.usercenter .order-btn{
+    display: inline-block;
+    width:100px;
+	height:40px;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+    margin-left: 10px;
+	cursor:pointer;
+	background-color:#F64747;
+    line-height: 40px;
+    text-align: center;
+}
+.right li:hover{
+    cursor: pointer;
+}
+.navtitle a:hover{
+	cursor: pointer;
+}
+.logo a{
+    cursor: pointer;
+}

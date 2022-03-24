@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品一览</title>
+    <link rel="stylesheet" href="../CSS/shoppinglist.css">
+    <link rel="shortcut icon" href="../image/1.png" type="image/x-icon">
+</head>
+<body>
+    <section class="section">
+        <div class="w">
+            <div class="left">
+                <ul>
+                    <li>嘿，欢迎用户&nbsp;&nbsp;<span id="admin"></span>&nbsp;&nbsp;来到优物购物！</li>
+                    <li>
+                        <a class="styleColor" href="../html/login.html" id="login">请登录</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span onclick="order()">我的订单</span></li>
+                    <li></li>
+                    <li><span onclick="center()">个人中心</span></li>
+                    <li></li>
+                    <li>网站导航</li>
+                    <li></li>
+                    <li>手机飞云</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <header class="header w">
+        <div class="logo">
+            <h1><a onclick="index()" title="优物商场"></a></h1>
+        </div>
+        <div class="search">
+                <input type="search" id="searchBorder"  placeholder="请输入你要搜索的东西" class="searchtext">
+                <input type="submit" onclick="search()"  type="submit" value="搜索" class="searchbtn">
+        </div>
+        <div class="hotwords">
+            <a href="#" class="styleColor">零食推荐</a>
+            <a href="#">电脑配件</a>
+            <a href="#">每100-50</a>
+            <a href="#">好物9.9</a>
+            <a href="#">手机爆款</a>
+            <a href="#">礼品推荐</a>
+        </div>
+        <div class="shopcar">
+            <img src="../Image/cart.gif" alt=""><a onclick="gouwuche()">我的购物车 >></a>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="w">
+            <div class="navall">
+                <div class="navtitle">
+                    <a onclick="index()">首页</a>
+                </div>
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li><a href="">秒杀</a></li>
+                    <li><a href="">优物服装</a></li>
+                    <li><a href="">优物家电</a></li>
+                    <li><a href="">优物生鲜</a></li>
+                    <li><a href="">优物超市</a></li>
+                    <li><a href="">优物美妆</a></li>
+                    <li><a href="">优物汽车</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="searcharea">
+        <dl>
+                <dd class="pp">
+                    <h5>品牌:</h5>
+                    <ul>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo1.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo2.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo3.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo4.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo5.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo6.jpg"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo7.jpg"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo8.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo9.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo10.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo11.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo12.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo13.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo14.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo15.png"/></a></li>
+                       <li><a  href="#"><img width="120" height="60" src="../Image/logo16.png"/></a></li>
+                    </ul>
+                </dd>
+                <dd class="jg">
+                    <h5>价格:</h5>
+                <div class="jg_div">    
+                </div>
+                </dd>
+        </dl>
+    </div>
+    <div class="tab">
+        <div class="tab_list">
+            <ul>
+                <li class = "current">不限</li>
+                <li>100元以下</li>
+                <li>101-499元</li>
+                <li>500-999元</li>
+                <li>1000-1999元</li>
+                <li>2000-2999元</li>
+                <li>3000-4999元</li>
+                <li>5000元以上</li>
+                <br><br>
+            </ul>
+        </div>
+        <div class="tab_con" >
+            <div class="item" style="display: block;" id="item1">
+                <ul class="brick-list" id="brick_list_ul" style="margin-top: 20px; margin-left: -40px;">
+                </ul>
+            </div>
+            <div class="item">
+                <ul class="brick-list" id="brick_list_ul2" style="margin-top: 20px; margin-left: -40px;">
+                </ul>
+            </div>  
+            <div class="item">
+                <ul class="brick-list" id="brick_list_ul3" style="margin-top: 20px; margin-left: -40px;">
+                </ul>
+            </div>
+            <div class="item">
+                <ul class="brick-list" id="brick_list_ul4" style="margin-top: 20px; margin-left: -40px;">
+                </ul>
+            </div>
+            <div class="item">
+                <ul class="brick-list" id="brick_list_ul5" style="margin-top: 20px; margin-left: -40px;">
+                </ul>
+            </div>
+            <div class="item">
+                <ul class="brick-list" id="brick_list_ul6" style="margin-top: 20px; margin-left: -40px;">
+                </ul>
+            </div>
+            <div class="item">
+                <ul class="brick-list" id="brick_list_ul7" style="margin-top: 20px; margin-left: -40px;">
+                </ul>
+            </div>
+            <div class="item">
+                <ul class="brick-list" id="brick_list_ul8" style="margin-top: 20px; margin-left: -40px;">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/jQuery.js"></script>
+    <script type="text/javascript" src="../JS//shoppinglist1.js"></script>   
+    <script type="text/javascript" src="../JS//shoppinglist.js"></script>   
+    <script type="text/javascript" src="../JS/center.js"></script>
+    <script src="../JS/admin.js"></script>
+    <script src="../JS/search.js"></script>
+</body>
+</html>
